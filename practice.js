@@ -10,7 +10,7 @@ var myName = "Gina";
 //Create a variable called myAge that is a number data type
 
 //Code here
-var myAge = 26;
+var myAge = 27;
 
 //////////////////PROBLEM 3////////////////////
 
@@ -24,7 +24,7 @@ var lovesCode = true;
 //Create a variable called greatestFear that is undefined because we fear nothing
 
 //Code here
-var greatestFear;
+var greatestFear = undefined;
 
 //////////////////PROBLEM 5////////////////////
 
@@ -51,7 +51,7 @@ function greeting(name) {
 //Name it newGreeting.
 
 //Code Here
-var newGreeting = function (name){
+var newGreeting = function(name) {
   return "Hello, " + name;
 }
 
@@ -64,7 +64,7 @@ var newGreeting = function (name){
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
-var groceries = ["apples", "milk", "eggs", "bread"];
+var groceries = ["apples", "milk", "eggs", "bread"]
 
 //////////////////PROBLEM 9////////////////////
 
@@ -76,8 +76,8 @@ var groceries = ["apples", "milk", "eggs", "bread"];
 //Code Here
 var dog = {
   name: "Leo",
-  color: "brown",
-  age: 2,
+  color: "Brown",
+  age: 3,
   goodBoy: true
 }
 
@@ -85,11 +85,8 @@ var dog = {
 //variable called devMountainClassPet.
 
 //Code Here
-function getName(dog){
-  return dog.name;
-}
-
 var devMountainClassPet = dog.name;
+
 //////////////////PROBLEM 10////////////////////
 
 //Write a function called nameCheck that takes in a name parameter.
@@ -100,17 +97,17 @@ var devMountainClassPet = dog.name;
 // with NAMEPARAM being the name parameter being passed in
 
 // Code here
-function nameCheck(name) {
-  if (name === 'Steven'){
-    return 'What is up Steven?';
-  }
-  if (name === 'Bryan'){
-    return 'Hey Bryan!';
-  }
-  else {
-    return 'Cool name, Joe';
-  } 
-}
+ function nameCheck(name) {
+   if(name === 'Steven') {
+     return 'What is up Steven?'
+   }
+   else if(name === 'Bryan') {
+     return 'Hey Bryan!'
+   } else {
+     return `Cool name, ${name}`
+   };
+ }
+
 //////////////////PROBLEM 11////////////////////
 
 // Create a function called add that takes in two parameters
@@ -119,14 +116,14 @@ function nameCheck(name) {
 
 //Code Here
 function add(num1, num2) {
-  return num1 + num2;
+  return num1 + num2
 }
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
 //Code Here
-var mathSum = add(3,4);
+var mathSum = add(3, 4);
 
 //////////////////PROBLEM 12////////////////////
 
@@ -139,19 +136,19 @@ var mathSum = add(3,4);
 
 // Code here
 function faveColorFinder(color) {
-  if (color === 'red'){
+  if(color === 'red') {
     return 'red is a great color';
   }
-  if (color === 'green'){
+  else if(color === 'green') {
     return 'green is a solid favorite color';
   }
-  if (color === 'black'){
-    return 'so trendy'
-  }
-  else {
+  else if(color === 'black') {
+    return 'so trendy';
+  } else {
     return 'you need to evaluate your favorite color choice'
   }
-}
+};
+
 //////////////////PROBLEM 13////////////////////
 
 let duck = "cute";
@@ -180,7 +177,7 @@ let globalScope = ["duck"];
 let bathroomScope = ["rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck", "rubberDuck", "duck"];
+let bathtubScope = ["rubberDuck", "sailorDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = ["realDuck", "duck"];
@@ -190,15 +187,15 @@ let pondScope = ["realDuck", "duck"];
 //Create a variable called age with your age assigned to you
 
 // Code Here
-var age = 26;
+var age = 27;
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
 // Code Here
-age = 26 + 1;
+var age = 27 + 1;
 
 // Good news! We can live forever. Set your age to 999
 
 // Code Here
-age = 999;
+var age = 999;
